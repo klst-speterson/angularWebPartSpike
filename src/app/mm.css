@@ -1,0 +1,17 @@
+.menu{
+    width:800px;
+    margin: 0 auto 0 auto;
+}
+
+.menu .menuItem{
+    border-right: 1px solid darkred;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menu .megaMenu{
+    border: 1px solid darkred;
+    font-size: 10pt;
+    position: absolute;
+}
+

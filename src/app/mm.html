@@ -1,0 +1,16 @@
+<div class="container menu">
+  <div class="row">
+    <div class="col-sm-3 menuItem" (mouseover)="showSubMenu(true, 'PG Sub Menu')"  (mouseout)="showSubMenu(false)">Practice Groups</div>
+    <div class="col-sm-3 menuItem" (mouseover)="showSubMenu(true, 'BD Sub Menu')"  (mouseout)="showSubMenu(false)">Business Development</div>
+    <div class="col-sm-3 menuItem" (mouseover)="showSubMenu(true, 'Off Sub Menu')"  (mouseout)="showSubMenu(false)">Offices</div>
+    <div class="col-sm-3 menuItem" (mouseover)="showSubMenu(true, 'Srv Sub Menu')"  (mouseout)="showSubMenu(false)">Services</div>
+  </div>
+  <div class="row megaMenu" *ngIf="showSub">
+    <div class="col-sm-2">{{subMenuLabel}}<br>{{subMenuLabel}}<br>{{subMenuLabel}}<br>{{subMenuLabel}}<br>{{subMenuLabel}}<br></div>
+    <div class="col-sm-2">{{subMenuLabel}}<br>{{subMenuLabel}}<br>{{subMenuLabel}}<br>{{subMenuLabel}}<br>{{subMenuLabel}}<br></div>
+    <div class="col-sm-2">{{subMenuLabel}}<br>{{subMenuLabel}}<br>{{subMenuLabel}}<br>{{subMenuLabel}}<br>{{subMenuLabel}}<br></div>
+    <div class="col-sm-2">{{subMenuLabel}}<br>{{subMenuLabel}}<br>{{subMenuLabel}}<br>{{subMenuLabel}}<br>{{subMenuLabel}}<br></div>
+    <div class="col-sm-2"></div>
+    <div class="col-sm-2"></div>
+  </div>
+</div>
